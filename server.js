@@ -18,6 +18,7 @@ app.use((req, res, next) => {
     next();
 });
 
+//Uncomment for maintenance
 // app.use((req, res, next) => {
 //     res.render('maintenance.hbs', {
 //         title: 'Maintenance'
@@ -50,7 +51,6 @@ app.get('/about' , (req, res) => {
     // });
     res.render('about.hbs', {
         title: 'About Page'
-        // ,currentYear: new Date().getFullYear()
     });
 });
 
